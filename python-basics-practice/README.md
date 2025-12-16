@@ -18,7 +18,6 @@ advanced topics such as AI engineering, data engineering, and machine learning.
 ## Covered Topics (Week 1)
 
 The following topics are covered in this repository:
-
 - Function introduction 
 - Lists and tuples
 - Strings and dictionaries
@@ -58,16 +57,17 @@ python day01_functions_intro.py
 No external dependencies are required.
 
 ## Notes
+
 This repository is intentionally kept simple and focused.
 Advanced frameworks and libraries are excluded to ensure a strong grasp of Python fundamentals.
 
 Future repositories will cover:
-
 - Linux and development tools
 - Data processing and engineering
 - Large Language Models (LLMs) and AI engineering projects
 
 ## Author
+
 Wei Yu
 
 AI Engineer in progress | RL for LLMs
