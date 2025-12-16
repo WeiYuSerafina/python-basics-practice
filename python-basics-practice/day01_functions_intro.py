@@ -12,7 +12,8 @@
    (b) Keyword(Key-Value) parameters
    (c) Default parameters
    (d) Variable-length parameters
-2.3
+
+2.3 lambda expresses anonymous functions
 """
 
 # 1 Basic Function
