@@ -56,6 +56,8 @@ python day01_functions_intro.py
 ```
 No external dependencies are required.
 
+---
+
 ## Notes
 
 This repository is intentionally kept simple and focused.
@@ -65,6 +67,8 @@ Future repositories will cover:
 - Linux and development tools
 - Data processing and engineering
 - Large Language Models (LLMs) and AI engineering projects
+
+---
 
 ## Author
 

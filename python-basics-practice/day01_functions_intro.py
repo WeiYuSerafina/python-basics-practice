@@ -12,7 +12,8 @@
    (b) Keyword(Key-Value) parameters
    (c) Default parameters
    (d) Variable-length parameters
-
+      - *args: Positional transfer (Data type: tuple)
+      - **kwargs: Keyword/key value transfer(Data type: dictionary)
 2.3 lambda expresses anonymous functions
 """
 
@@ -64,8 +65,8 @@ def func_d():
 def func_e():
     print(f"e: {num}")
 
-func_d()
-func_e()
+func_d() # d: 200
+func_e() # 2: 200
 print(f"External output: {num}")
 
 # 1.4 Comprehensive Exercise: ATM Business Process
@@ -76,7 +77,7 @@ ${money:,} for example: $5,000,000
 
 Logic which did not consider:
 main menu should include all services
- if money >= output_number should be considered in the withdrawing service
+if money >= output_number should be considered in the withdrawing service
 """
 # global variables
 name = input("Enter your name: ")
@@ -166,8 +167,8 @@ print(x, type(x)) # (1, 2) <class 'tuple'>
 2.2 (b) Keyword(Key-Value) parameters
 2.2 (c) Default parameters
 2.2 (d) Variable-length parameters
-- Positional transfer 
-- 
+- *args: Positional transfer (Data type: tuple)
+- **kwargs: Keyword/key value transfer(Data type: dictionary)
 """
 # 2.2 (a) Positional parameters
 def user1(name, age, gender):
@@ -185,24 +186,23 @@ def user3(name, age, gender="female"):
 user3("Rose", 21)
 user3("Mike", 18, "male")
 
-# 2.2 (d) Variable-length parameters: Positional transfer(tuple)
+# 2.2 (d) Variable-length parameters: Positional transfer(Data type: tuple)
 def member_info(name, *args): # *args = *xxx
     print(f"We are {name}, the members are followed: ")
     for i in args:
         print(i)
     print(args, type(args))
 
-member_info("Member group", "Wei", "Jodie", "Mike")
+member_info("Member group", 88, "Jodie", "Mike")
 
-# 2.2 (d) Variable-length parameters: Keyword transfer(dictionary)
+# 2.2 (d) Variable-length parameters: Keyword transfer(Data type: dictionary)
 def user1_info(**kwargs):
     """
     **kwargs is <class 'dict'>, all the keyword parameters are collected in the dic
     :param kwargs:
-    :return:
+    :return: None
     """
     print(kwargs, type(kwargs))
-
 # In the essence we transfer KV(Key Value) which are collected in the kwargs dictionary
 user1_info(name= "Tom", age=18, id=100)
 
@@ -211,6 +211,24 @@ def user2_info(name, age, *args, **kwargs):
     print(f"Dic collection: {kwargs}")
 user2_info("Wei",18, 1,2,3,4,5,6, id=1, gender="female")
 
+# 2.3 lambda expresses anonymous functions
+"""
+New knowledge:
+(a) Difference between lambda and def x()
+- lambda(anonymous function) can pass computational logic, lambda can typically ONLY be used once
+- def x() can be reused 
+
+(b) lambda grammar
+- lambda Input parameters : Function body (ONLY one line of code)
+"""
+def func(compute):
+    result = compute(1,2)
+    print(result)
+func(lambda x,y: x+y)
+
+def compute(x, y):
+    return x + y
+func(compute)
 
 
 
