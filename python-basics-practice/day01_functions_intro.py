@@ -223,12 +223,22 @@ New knowledge:
 """
 def func(compute):
     result = compute(1,2)
-    print(result)
-func(lambda x,y: x+y)
+    print(f"result: {result}")
 
 def compute(x, y):
     return x + y
 func(compute)
+
+# Codes can be brief with lambda expression := lambda x,y : x + y
+def func(compute):
+    result = compute(1,2)
+    print(f"result: {result}")
+
+func(lambda x,y: x+y)
+
+def compute(x,y):
+    return x + y
+
 
 
 

@@ -1,7 +1,7 @@
 """
 1 List
 1.1 List literal(字面量)
-1.2 Nested lists
+1.2 Nested list
 1.3 Empty list
 1.4 Index and inverted index
 1.5 Common operations
@@ -14,20 +14,6 @@
 
 # 1 List
 # 1.1 List literal(字面量)
-def func(compute):
-    result = compute(1, 2)
-    print(result)
-
-
-func(lambda x, y: x + y)
-
-
-def compute(x, y):
-    return x + y
-
-
-func(compute)
-
 list1 = ["Welcome the new year", 2026, "in Hamburg", (6, 9)]
 print(list1)
 
@@ -42,7 +28,7 @@ print(f"list3: {list3}")
 print(f"list4: {list4}")
 
 # 1.4 Index and inverted index
-# Index from left to right: 0, 1,2...
+# Index from left to right: 0,1,2...
 list5 = ["Welcome the new year", 2026, "in Hamburg", (6, 9)]
 print(list1[0])  # Welcome the new year
 
@@ -68,7 +54,7 @@ print(list1[-2])  # in Hamburg
 
 # 1.5 Common operations
 """
-Difference between function and method:
+Difference between function(函数) and method(方法):
 - Under a class, a function is named as a method
 
 list is essentially a class which offers many built-in functions(methods);
