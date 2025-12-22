@@ -19,9 +19,9 @@ advanced topics such as AI engineering, data engineering, and machine learning.
 
 The following topics are covered in this repository:
 - Function introduction 
-- Lists and tuples
-- Strings and dictionaries
-- Sets, slicing, and lambda expressions
+- Lists
+- Tuples, strings, sequence slice and set
+- dictionaries and string comparison
 - Weekly review and consolidation
 
 ---
@@ -31,9 +31,9 @@ The following topics are covered in this repository:
 ```
 python-basics-practice/
 ├── day01_functions_intro.py
-├── day02_list_tuple.py
-├── day03_string_dict.py
-├── day04_set_slice_lambda.py
+├── day02_list.py
+├── day03_tuple_str_sequence slice_set.py
+├── day04_dict_string comparison.py
 ├── day05_week1_review.py
 └── README.md
 ```
@@ -67,6 +67,12 @@ Future repositories will cover:
 - Linux and development tools
 - Data processing and engineering
 - Large Language Models (LLMs) and AI engineering projects
+
+---
+
+## Week 1 – Data Structures Overview
+
+![Data Structures Comparison](images/data_structures_comparison.png)
 
 ---
 
