@@ -2,7 +2,7 @@
 1 Dict
 1.1 dict definition
 1.2 Nested dict
-1.3 Common  operations
+1.3 Common operations
 1.4 Exercise: promotion and salary increase
 
 2. String comparison
@@ -45,7 +45,7 @@ student_score = {
         "English":66
     }
 }
-print(f"The grade of Jay Chou's math: {student_score['Jay Chou']['Math']}")
+print(f"The grade of Jay Chou's math: {student_score['Jay Chou']['Math']}") # 86
 
 # Sample2
 student_hobby = {
